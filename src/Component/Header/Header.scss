@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+body{font-family: 'Raleway', sans-serif; font-size: 15px;}
+.megamenu {
+    position: static;
+  }
+.navbar{position: absolute; left: 0; top: 0; z-index: 1;}
+.navbar-light .navbar-nav .nav-item > .nav-link{color: white;}
+.navbar-light .navbar-nav .nav-item .dropdown-menu .nav-link{color: black;}
+.navbar-light .navbar-nav .nav-item .nav-link:focus, .navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color:#c3ac6d;
+}
+.navbar-collapse{flex-grow: inherit;}
+  
+  .megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%;
+  }
+  
+  /*
+  *
+  * ==========================================
+  * FOR DEMO PURPOSES
+  * ==========================================
+  *
+  */
+  
+  .APP  {
+    background: #eaafc8;
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    min-height: 100vh;
+  }
+  
+  code {
+    color: #745eb1;
+    background: #fff;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.08em;
+  }
+  .megaimaga
+  {
+    background: center center url("https://therichpost.com/wp-content/uploads/2021/11/mega.png") no-repeat; background-size: cover;
+  }
+
+  .card .card-img-overlay {    
+    position: absolute;
+    padding: 20px;    
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+    opacity: 0;
+    visibility: hidden;
+    color: #fff;
+    background-color: rgba($color: #c3ac6de0, $alpha: 0.8);    
+}
+  .card:hover .card-img-overlay, .card:focus .card-img-overlay, .card:active .card-img-overlay {
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+    opacity: 1;
+    visibility: visible;
+    z-index: 4;    
+  }
+
+  .carousel-caption{text-align: left;}
+  .carousel-caption .main_caption{position: absolute; left: 0; bottom:100%;max-width: 500px;}
+  .carousel-caption .main_caption .banner_title{font-size:85px; line-height: 99px; text-align: left;}
+  .carousel-caption .main_caption .banner_title .yellow{font-weight: 600;}
+  .carousel-caption .main_caption .banner_title .red{font-weight: 400;}
+  .yellow{color:#c3ac6d}
+  .red{color:#ed3b49}
+  .main_caption p{font-size: 20px;color: #bfbfbf;}
+  .border_bottom { position: relative; padding-bottom: 30px; margin-bottom: 30px;}
+  .border_bottom::before{content: ""; width: 112px; height: 3px; background: #fff; left: 0; bottom: 0; position: absolute;}
+  .secondary_title{font-size: 18px; font-weight: 700;}
+  .bread{font-size:15px;color:#c3ac6d;font-weight:600;}.bread:after{content:'/ '}.crumb{font-size:14px;letter-spacing:1px;color:#b8b8b8;font-weight:600;text-transform:uppercase}
+  .teritarial_title{font-size: 24px;line-height: 1.26;color: #060617; font-weight: 600;}
+  .portfolio{background: #f6f6f6;}
+  .primary_title{position: relative;color: #060617;font-weight: 600;font-size: 62px;}
+  .primary_title.border_bottom::before{left: 0; right: 0; margin: 0 auto;background: #c3ac6d;}
+  .subtitle{font-size: 19px; font-weight: 400; color: #858585;}
+  .imagine .primary_title.border_bottom::before{margin-left: 0;}
+
+  .counters {
+    background-image: url("https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-parallax.jpg");
+    color: #fff;
+  }  
+  .counter{font-size: 80px; font-weight: 600;}
+.bg-dark{background-color: #060617 !important;}
