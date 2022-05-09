@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 /*
 *
 * ==========================================
@@ -6,12 +6,29 @@
 * ==========================================
 *
 */
-body{font-family: 'Raleway', sans-serif; font-size: 15px;}
+body{font-family: 'Montserrat', sans-serif; font-size: 15px;}
 .megamenu {
     position: static;
   }
-.navbar{position: absolute; left: 0; top: 0; z-index: 1;}
-.navbar-light .navbar-nav .nav-item > .nav-link{color: white;}
+header{position: absolute; left: 0; top: 0; z-index: 1; width: 100%;}
+header .navbar-expand-lg{justify-content: space-between;}
+.navbar-light .navbar-nav > .nav-item{padding: 0 15px;}
+.navbar-light .navbar-nav > .nav-item:last-child{padding-right: 0;}
+.navbar-light .navbar-nav .nav-item > .nav-link{color: white; position: relative; font-size: 16px; font-weight: 600; letter-spacing: .02em;}
+.navbar-light .navbar-nav .nav-item > .nav-link::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  right: 0;
+  width:0;
+  background: #c3ac6d;
+  transition: width .3s;
+}
+.navbar-light .navbar-nav .nav-item > .nav-link:hover::before{
+  width:100%;
+}
 .navbar-light .navbar-nav .nav-item .dropdown-menu .nav-link{color: black;}
 .navbar-light .navbar-nav .nav-item .nav-link:focus, .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color:#c3ac6d;
@@ -75,10 +92,8 @@ body{font-family: 'Raleway', sans-serif; font-size: 15px;}
   }
 
   .carousel-caption{text-align: left;}
-  .carousel-caption .main_caption{position: absolute; left: 0; bottom:100%;max-width: 500px;}
+  .carousel-caption .main_caption{position: absolute; left: 0; bottom:100%;max-width: 550px;}
   .carousel-caption .main_caption .banner_title{font-size:85px; line-height: 99px; text-align: left;}
-  .carousel-caption .main_caption .banner_title .yellow{font-weight: 600;}
-  .carousel-caption .main_caption .banner_title .red{font-weight: 400;}
   .yellow{color:#c3ac6d}
   .red{color:#ed3b49}
   .main_caption p{font-size: 20px;color: #bfbfbf;}
@@ -99,3 +114,7 @@ body{font-family: 'Raleway', sans-serif; font-size: 15px;}
   }  
   .counter{font-size: 80px; font-weight: 600;}
 .bg-dark{background-color: #060617 !important;}
+.carousel-control-next{right:30px}
+.carousel-control-prev{left:30px}
+.carousel-control-next, .carousel-control-prev{top:50%; bottom: auto; width:60px; height: 60px; background: rgba($color: #c3ac6d, $alpha: 0.7); margin-top: -30px; border-radius: 50%;}
+.carousel-control-next:hover, .carousel-control-prev:hover{background: rgba($color: #c3ac6d, $alpha: 1);}
