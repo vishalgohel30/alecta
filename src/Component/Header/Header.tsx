@@ -5,6 +5,12 @@ import './Header.scss';
 
 const Header = () =>{
 
+    const handleScroller = (idName:string) => {
+        let element: HTMLElement | null = document.getElementById(
+            idName
+        );
+        element?.scrollIntoView({ behavior: "smooth" });
+      };
 
     return(
         <header>
@@ -75,9 +81,35 @@ const Header = () =>{
                 </div>
                 </div>
             </li>
-            <li className="nav-item"><a href="" className="nav-link font-weight-bold">About</a></li>
+            {/* <li className="nav-item"><a href="" className="nav-link font-weight-bold">About</a></li>
             <li className="nav-item"><a href="" className="nav-link font-weight-bold">Services</a></li>
-            <li className="nav-item"><a href="" className="nav-link font-weight-bold">Contact</a></li>
+            <li className="nav-item"><a href="" className="nav-link font-weight-bold">Contact</a></li> */}
+
+            <li className="nav-item" onClick={()=>{handleScroller("services")}}>
+                    <div className="nav-link font-weight-bold">
+                      Services
+                    </div>
+                  </li>
+                  <li className="nav-item" onClick={()=>{handleScroller("clinets")}}>
+                    <div
+                      className="nav-link font-weight-bold"
+                    >
+                      Clinets
+                    </div>
+                  </li>
+                  <li className="nav-item" onClick={()=>{handleScroller("about")}}>
+                    <div
+                      className="nav-link font-weight-bold"
+                    >
+                      About
+                    </div>
+                  </li>
+                  <li className="nav-item" onClick={()=>{handleScroller("about")}}>
+                    <div  className="nav-link font-weight-bold"
+                    >
+                      Contact
+                    </div>
+                  </li>
             </ul>
         </div>
 

@@ -241,7 +241,7 @@ export default function Home({}: Props) {
         </div>
         </div>
      </section>
-     <section>
+     <section id="services">
       <div className="container px-4 py-5" id="icon-grid">    
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
       <div className="col d-flex align-items-start">        
@@ -356,7 +356,7 @@ export default function Home({}: Props) {
       </div>    
     </div>
     </section>
-    <section className="py-5">
+    <section className="py-5" id="clinets">
       <div className="container">
         <Carouselmulti responsive={responsive} arrows={false}>
           <div><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/client-1b.png"/></div>
