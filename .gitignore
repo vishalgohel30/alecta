@@ -1,0 +1,6 @@
+node_modules/
+build/
+.idea/
+jsconfig.json
+deploy.sh
+server/public/tempfiles/

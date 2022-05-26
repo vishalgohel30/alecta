@@ -82,6 +82,10 @@ header .navbar-expand-lg{justify-content: space-between;}
     color: #fff;
     background-color: rgba($color: #c3ac6de0, $alpha: 0.8);    
 }
+.card .card-img-overlay .overlay_content{
+  bottom: 20px;
+  position: absolute;
+}
   .card:hover .card-img-overlay, .card:focus .card-img-overlay, .card:active .card-img-overlay {
     -webkit-transition-delay: .2s;
     -o-transition-delay: .2s;
@@ -90,10 +94,23 @@ header .navbar-expand-lg{justify-content: space-between;}
     visibility: visible;
     z-index: 4;    
   }
-
+  .carousel-caption {
+    position: absolute;
+    right: auto;
+    top: 50%;
+    left: 50%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
   .carousel-caption{text-align: left;}
-  .carousel-caption .main_caption{position: absolute; left: 0; bottom:100%;max-width: 550px;}
+  .carousel-caption .main_caption .container{position: relative;}
+  .banner_titles{padding-left: 50px; max-width: 550px;}
+  .banner_titles span{display: block;}
+  .banner_titles hr{width: 64px; height: 2px; margin-top: 30px; margin-bottom: 30px;}
   .carousel-caption .main_caption .banner_title{font-size:85px; line-height: 99px; text-align: left;}
+  .animateSlide{position: absolute; right: 50px; top: 200px; opacity: 0.6;}
   .yellow{color:#c3ac6d}
   .red{color:#ed3b49}
   .main_caption p{font-size: 20px;color: #bfbfbf;}
@@ -111,10 +128,66 @@ header .navbar-expand-lg{justify-content: space-between;}
   .counters {
     background-image: url("https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-parallax.jpg");
     color: #fff;
+    background-attachment: fixed;
   }  
   .counter{font-size: 80px; font-weight: 600;}
 .bg-dark{background-color: #060617 !important;}
+.carousel{background: #07081a;}
 .carousel-control-next{right:30px}
 .carousel-control-prev{left:30px}
 .carousel-control-next, .carousel-control-prev{top:50%; bottom: auto; width:60px; height: 60px; background: rgba($color: #c3ac6d, $alpha: 0.7); margin-top: -30px; border-radius: 50%;}
 .carousel-control-next:hover, .carousel-control-prev:hover{background: rgba($color: #c3ac6d, $alpha: 1);}
+.animateBar{
+  // -webkit-animation: scale 5s linear infinite;
+  // animation: scale 5s linear infinite;
+  position: absolute;
+  top:-300px;
+  left:-250px;
+  opacity: 0.7;
+  // height: 0;
+}
+.imagestar{
+  position: absolute;
+  left: 0;
+}
+
+.zoom {
+  -webkit-animation: scale 5s linear infinite;
+          animation: scale 5s linear infinite;
+          position: absolute;
+          top:-10px;
+          left: 50%;
+          opacity: 0.3;
+}
+
+@-webkit-keyframes scale {
+  50% {
+    transform: scale(8);
+  }
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(8);
+  }
+}
+.zoom1 {
+  -webkit-animation: scale 5s linear infinite;
+          animation: scale 5s linear infinite;
+          position: absolute;
+          bottom:-150px;
+          right:-150px;
+          opacity: 0.5;
+}
+
+@-webkit-keyframes scale {
+  50% {
+    transform: scale(5);
+  }
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(5);
+  }
+}
