@@ -248,23 +248,23 @@ export default function Home({ }: Props) {
               <div className="main_caption main_new_caption">
                 <div className="container">
                 <H1SlideImg4 />
-                <h2 className="banner_titles">
+                <h2 className="banner_title banner_titles pb-5">
                   <span
-                    className="banner_title fw-bold"
+                    className="fw-bold"
                     style={{ visibility: "hidden" }}
                     ref={elIdentity}
                   >
                     Identity
                   </span>{" "}
                   <span
-                    className="banner_title yellow ms-1"
+                    className="yellow ms-1"
                     style={{ visibility: "hidden" }}
                     ref={elWebsite}
                   >
                     Website &amp;
                   </span>{" "}
                   <span
-                    className="banner_title red fw-light"
+                    className="red fw-light"
                     style={{ visibility: "hidden" }}
                     ref={elMarketing}
                   >
@@ -272,8 +272,6 @@ export default function Home({ }: Props) {
                   </span>
                 </h2>
               </div>
-      
-              <SecondaryTitle />
               </div>
               <div className="zoom1">
                 <img
@@ -290,12 +288,10 @@ export default function Home({ }: Props) {
                     borderWidth: "0px",
                     margin: "0px",
                     padding: "0px",
-                    letterSpacing: "0px",
-                    fontWeight: "400",
-                    fontSize: "5px",
                   }}
                 />
               </div>
+              <SecondaryTitle />
             </Carousel.Caption>
           )}
         </Carousel.Item>
@@ -364,7 +360,7 @@ export default function Home({ }: Props) {
                     <h3  ref={slideElBanner2One} style={{ visibility: "hidden" }} className="banner_title  lh-1 fw-bold">
                       Everything <br />
                       Around <br />
-                      Us is <span className="yellow">Design</span>
+                      <span className="yellow">Us is Design</span>
                     </h3>
                     <hr style={{ visibility: "hidden" }}
                         ref={elWeborder}/>

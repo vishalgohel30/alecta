@@ -106,7 +106,7 @@ header .navbar-expand-lg{justify-content: space-between;}
   }
   .carousel-caption{text-align: left;}
   .carousel-caption .main_caption .container{position: relative;}
-  .banner_titles{padding-left: 50px; max-width: 550px;}
+  .banner_titles{padding-left: 50px; max-width: 600px;}
   .banner_titles span{display: block;}
   .banner_titles hr{width: 64px; height: 2px; margin-top: 30px; margin-bottom: 30px;}
   .carousel-caption .main_caption .banner_title{font-size:85px; line-height: 99px; text-align: left;}
@@ -142,7 +142,7 @@ header .navbar-expand-lg{justify-content: space-between;}
   // animation: scale 5s linear infinite;
   position: absolute;
   top:-300px;
-  left:-250px;
+  left:-450px;
   opacity: 0.7;
   // height: 0;
 }
@@ -190,4 +190,15 @@ header .navbar-expand-lg{justify-content: space-between;}
   50% {
     transform: scale(5);
   }
+}
+@media only screen and (max-width: 1600px) {
+  .carousel-caption{
+    bottom: auto;
+  }
+  .carousel-caption .main_caption .banner_title{
+    
+  }
+}
+@media only screen and (max-width: 1600px){
+  .carousel-caption .container{max-width: 1130px;}
 }
