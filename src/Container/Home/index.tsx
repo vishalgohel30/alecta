@@ -81,9 +81,9 @@ const SecondaryTitle = () => {
   }, []);
 
   return (
-    <div className="usp">
-      <div className="container px-4 py-5" id="featured-3">
-        <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div className="usp mrg-50">
+      <div className="container px-4" id="featured-3">
+        <div className="row g-4 row-cols-1 row-cols-lg-3">
           <div
             className="feature col"
             style={{ visibility: "hidden" }}
@@ -151,13 +151,9 @@ const SlideBackGroundImage = ({ alt, src, className }: { alt?: string, src?: str
     gsap.to(img1.current, { duration: 25, scale: 1.2, delay: 0.1 });
   }, []);
 
-  return <img
-    className="d-block w-100"
-    src={`https://alecta.qodeinteractive.com/wp-content/uploads/2017/07/${src}`}
-    alt={alt}
-    ref={img1}
-    style={{ visibility: "hidden" }}
-  />
+  return  <div className="main_banner_img" 
+  ref={img1}
+  style={{ visibility: "hidden" ,  height:"100%",  backgroundImage: `url(https://alecta.qodeinteractive.com/wp-content/uploads/2017/07/${src}` }} />
 }
 
 export default function Home({ }: Props) {
@@ -196,7 +192,7 @@ export default function Home({ }: Props) {
 
   useEffect(() => {
     gsap
-      .timeline().to(slideElBanner2One.current, { x: -50, delay: 0.10, autoAlpha: 1 })
+      .timeline().to(slideElBanner2One.current, { x: -50, delay: 0.8, autoAlpha: 1 })
       .to(elWeborder.current, { x: -50, autoAlpha: 1 })
       .to(slideElBanner2Two.current, { x: -50, autoAlpha: 1 })
   }, [state]);
@@ -205,7 +201,7 @@ export default function Home({ }: Props) {
     gsap
       .timeline()
       .to(elIdentity.current, {
-        x: -50,
+        x: -20,
         duration: 0.5,
         delay: 0.4,
 
@@ -216,7 +212,6 @@ export default function Home({ }: Props) {
       
   }, [state]);
 
-  console.log("state", state)
   return (
     <div>
       <Carousel
@@ -227,10 +222,10 @@ export default function Home({ }: Props) {
         <Carousel.Item>
           {state === 0 && (
            <>
-           <SlideBackGroundImage
-              alt="First slide"
-              src="h1-slide-img-1.jpg"
-            />
+             <SlideBackGroundImage
+                  alt="First slide"
+                  src="h1-slide-img-1.jpg"
+                />
             <div className="zoom">
                 <img
                   src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/07/h1-slide-img-2.png"
@@ -277,7 +272,6 @@ export default function Home({ }: Props) {
                 <img
                   // className="d-block w-1"
                   src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/07/h1-slide-img-3.png"
-                  
                   alt="First slide"
                   style={{
                     width: "115.454px",
@@ -299,11 +293,10 @@ export default function Home({ }: Props) {
         <Carousel.Item>
           {state === 1 && (
            <>
-           <SlideBackGroundImage
-              alt="Second slide"
-              src="h1-slide2-img-1.jpg"
-              className=""
-            />            
+              <SlideBackGroundImage
+                  alt="Second slide"
+                  src="h1-slide2-img-1.jpg"
+                />              
             <div className="animateBar">
                 <img
                   src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/07/h1-slide2-img-2.png"
@@ -341,16 +334,15 @@ export default function Home({ }: Props) {
             </Carousel.Caption>
           )}{" "}
         </Carousel.Item>
-
         <Carousel.Item>
           {state === 2 && (
-            <SlideBackGroundImage
-              alt="Third slide"
-              src="h1-slide3-img-1.jpg"
-            />
-
+          <>
+               <SlideBackGroundImage
+                  alt="Third slide"
+                  src="h1-slide3-img-1.jpg"
+                />              
+            </>
           )}
-
           {state === 2 && (
             <Carousel.Caption>
               <div className="main_caption">

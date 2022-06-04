@@ -191,14 +191,24 @@ header .navbar-expand-lg{justify-content: space-between;}
     transform: scale(5);
   }
 }
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+}
+.carousel-item .main_banner_img{
+  background-size: cover;
+  background-attachment: fixed;
+}
+.carousel-item img.h-100{
+  min-width: 100%;
+}
+.mrg-50{margin-top: 100px;}
 @media only screen and (max-width: 1600px) {
   .carousel-caption{
     bottom: auto;
   }
-  .carousel-caption .main_caption .banner_title{
-    
-  }
-}
-@media only screen and (max-width: 1600px){
   .carousel-caption .container{max-width: 1130px;}
+}
+@media only screen and (max-width: 1200px) {
+  .carousel-control-next, .carousel-control-prev{display: none;}
 }

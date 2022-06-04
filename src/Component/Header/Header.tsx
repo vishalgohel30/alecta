@@ -11,7 +11,7 @@ const Header = () =>{
 
 <div className='container-fluid'>
           
-        <nav className="navbar navbar-expand-lg navbar-light bg-transparent py-3 shadow-sm">
+        <nav className="navbar navbar-expand-lg navbar-light bg-transparent py-3 px-4 shadow-sm">
         
             <a href="#">
             <img className="qodef-normal-logo" src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/logo-light.png" alt="logo" height="90" />           
