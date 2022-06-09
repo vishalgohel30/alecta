@@ -201,7 +201,7 @@ export default function Home({ }: Props) {
     gsap
       .timeline()
       .to(elIdentity.current, {
-        x: -20,
+        x: -10,
         duration: 0.5,
         delay: 0.4,
 
@@ -436,7 +436,7 @@ export default function Home({ }: Props) {
           </div>
 
           <div className="row">
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p1.jpg"
                 alt="Card image"
@@ -453,7 +453,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p2.jpg"
                 alt="Card image"
@@ -470,7 +470,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p3.jpg"
                 alt="Card image"
@@ -487,7 +487,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p4.jpg"
                 alt="Card image"
@@ -504,7 +504,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p5.jpg"
                 alt="Card image"
@@ -521,7 +521,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p6.jpg"
                 alt="Card image"
@@ -538,7 +538,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p7.jpg"
                 alt="Card image"
@@ -555,7 +555,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-3 col-lg-3 border-0 p-0">
+            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p8.jpg"
                 alt="Card image"
@@ -726,11 +726,11 @@ export default function Home({ }: Props) {
             </div>
           </div>
         </div>
-      </section>
+      </section>           
       <section className="imagine">
         <div className="container py-5">
-          <div className="d-flex align-items-center">
-            <div className="flex-grow-1 ms-3">
+          <div className="row align-items-center">
+            <div className="col-xs-1 col-sm-2 col-md-2 col-lg-4">
               <h2 className="primary_title border_bottom">
                 Imagine <br />
                 And Create
@@ -752,14 +752,15 @@ export default function Home({ }: Props) {
                 Purchase
               </button>
             </div>
-            <div className="flex-shrink-0 position-relative">
-              {/* <div className="position-absolute"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-4.jpg" alt="Third slide" /></div> */}
+            <div className="col-xs-1 col-sm-2 col-md-2 col-lg-8 position-relative">
+              <div className="position-absolute first_image"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-4.jpg" alt="" /></div>
               <img
+                className="float-end"
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-3.png"
                 alt=""
               />
-              {/* <div className="position-absolute"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-2.png" alt="Third slide" /></div>
-        <div className="position-absolute"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-1.png" alt="Third slide" /></div> */}
+              <div className="position-absolute second_image"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-2.png" alt="" /></div>
+        <div className="position-absolute third_image"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-1.png" alt="" /></div>
             </div>
           </div>
         </div>
