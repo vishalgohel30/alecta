@@ -215,6 +215,18 @@ header .navbar-expand-lg{justify-content: space-between;}
   bottom:0;
   left: 350px;
 }
+.btn{
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 15px 45px;
+}
+.custom-width{
+  max-width: 650px;
+  margin: 0 auto;
+  padding-right: 15px;
+}
+footer img{max-width: 100%;}
 @media only screen and (max-width: 1600px) {
   .carousel-caption{
     bottom: auto;
@@ -222,15 +234,73 @@ header .navbar-expand-lg{justify-content: space-between;}
   .carousel-caption .container{max-width: 1130px;}
   .carousel-item .main_banner_img {
     background-position: -150px 50px;
-}
+  }
 }
 @media only screen and (max-width: 1200px) {
   .carousel-control-next, .carousel-control-prev{display: none;}
+  .imagine .text-content{position: relative; z-index: 2;}
+  .imagine img{max-width: 100%;}
 }
 @media only screen and (max-width: 1032px){
   header{position: static; background: #fff;}
   .navbar-light .navbar-nav .nav-item > .nav-link{color:#000}
   .qodef-normal-logo.d-lg-none{display: block !important;}
   .qodef-normal-logo.d-none.d-lg-block{display: none !important;}
-  
+  .carousel-item .main_banner_img {
+    background-position: -250px 50px;
+  }
+  .awe-work img{min-height: 500px;}
+  .animateSlide{right:20px;top: 420px;}
+  .animateSlide img{width: 150px; height: 150px;}
+  .animateSlide img{width: 100px; height: 100px;}
+  .animateBar{left: -400px;}  
+}
+@media only screen and (max-width: 768px){
+  .position-absolute.first_image {
+    left: auto;
+    right: 0;
+    bottom: -15px;
+  }
+  .carousel-item .main_banner_img {
+    background-position: -500px 50px;
+  }
+
+}
+@media only screen and (max-width: 767px){
+  .carousel-caption .main_caption .banner_title{
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .awe-work .d-flex{
+    flex-wrap: wrap;
+  }
+  .awe-work .d-flex .custom-width{
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .awe-work .d-flex .w-50{
+    width: 100% !important;
+  }
+  .awe-work img{min-height: auto;}
+  .carousel-item .main_banner_img {
+    background-position: -550px 50px;
+  }
+  .carousel-item:first-child .main_banner_img {
+    background-position: -600px 50px;
+  }
+  .primary_title,  .counter{font-size: 40px;}
+  .main_caption p{font-size: 14px; color:#fff}
+  .animateSlide{right:20px;top: auto; bottom: 0px;}
+
+}
+@media only screen and (max-width: 479px){
+.d-none-mob{
+  display: none;
+}
+.carousel-caption .main_caption .banner_title{
+  font-size: 30px;
+  line-height: 45px;
+}
+
 }

@@ -81,9 +81,9 @@ const SecondaryTitle = () => {
   }, []);
 
   return (
-    <div className="usp mrg-50">
+    <div className="usp mrg-50 d-none-mob">
       <div className="container px-4" id="featured-3">
-        <div className="row g-4 row-cols-1 row-cols-lg-3">
+        <div className="row g-4 row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
           <div
             className="feature col"
             style={{ visibility: "hidden" }}
@@ -241,7 +241,7 @@ export default function Home({ }: Props) {
           {state === 0 && (
             <Carousel.Caption>              
               <div className="main_caption main_new_caption">
-                <div className="container">
+                <div className="container px-3">
                 <H1SlideImg4 />
                 <h2 className="banner_title banner_titles pb-5">
                   <span
@@ -311,7 +311,7 @@ export default function Home({ }: Props) {
           {state === 1 && (
             <Carousel.Caption>
               <div className="main_caption">
-                <div className="container">
+                <div className="container px-3">
                 <H1SlideImg4 />
                   <div className="banner_titles">
                     <h3 className="banner_title fw-bold lh-1">
@@ -346,7 +346,7 @@ export default function Home({ }: Props) {
           {state === 2 && (
             <Carousel.Caption>
               <div className="main_caption">
-                <div className="container">
+                <div className="container px-3">
                   <H1SlideImg4  />
                   <div className="banner_titles">
                     <h3  ref={slideElBanner2One} style={{ visibility: "hidden" }} className="banner_title  lh-1 fw-bold">
@@ -436,7 +436,7 @@ export default function Home({ }: Props) {
           </div>
 
           <div className="row">
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p1.jpg"
                 alt="Card image"
@@ -453,7 +453,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p2.jpg"
                 alt="Card image"
@@ -470,7 +470,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p3.jpg"
                 alt="Card image"
@@ -487,7 +487,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p4.jpg"
                 alt="Card image"
@@ -504,7 +504,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p5.jpg"
                 alt="Card image"
@@ -521,7 +521,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p6.jpg"
                 alt="Card image"
@@ -538,7 +538,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p7.jpg"
                 alt="Card image"
@@ -555,7 +555,7 @@ export default function Home({ }: Props) {
                 </div>
               </Card.ImgOverlay>
             </Card>
-            <Card className="col-xs-1 col-sm-2 col-md-4 col-lg-3 border-0 p-0">
+            <Card className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 border-0 p-0">
               <Card.Img
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-p8.jpg"
                 alt="Card image"
@@ -577,7 +577,7 @@ export default function Home({ }: Props) {
       </section>
       <section id="services">
         <div className="container px-4 py-5" id="icon-grid">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
+          <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
             <div className="col d-flex align-items-start">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -704,22 +704,22 @@ export default function Home({ }: Props) {
       <section className="counters py-5">
       <div className="container">
           <div   className="row py-5 text-center">
-            <div className="col-sm-2 col-md-3">
+            <div className="col-sm-6 col-md-3">
               <Ticker className="counter" end={223} />
               <br />
               <h4>Layouts</h4>
             </div>
-            <div className="col-sm-2 col-md-3">
+            <div className="col-sm-6 col-md-3">
               <Ticker className="counter" end={68} />
               <br />
               <h4>Projects</h4>
             </div>
-            <div className="col-sm-2 col-md-3">
+            <div className="col-sm-6 col-md-3">
               <Ticker className="counter" end={827} />
               <br />
               <h4>Cups of Coffee</h4>
             </div>
-            <div className="col-sm-2 col-md-3">
+            <div className="col-sm-6 col-md-3">
               <Ticker className="counter" end={14} />
               <br />
               <h4>Awards</h4>
@@ -730,7 +730,7 @@ export default function Home({ }: Props) {
       <section className="imagine">
         <div className="container py-5">
           <div className="row align-items-center">
-            <div className="col-xs-1 col-sm-2 col-md-2 col-lg-4">
+            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-4 text-content">
               <h2 className="primary_title border_bottom">
                 Imagine <br />
                 And Create
@@ -752,20 +752,20 @@ export default function Home({ }: Props) {
                 Purchase
               </button>
             </div>
-            <div className="col-xs-1 col-sm-2 col-md-2 col-lg-8 position-relative">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 position-relative">
               <div className="position-absolute first_image"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-4.jpg" alt="" /></div>
               <img
-                className="float-end"
+                className="float-end d-none-mob d-xs-none d-sm-none d-md-none d-lg-block"
                 src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-3.png"
                 alt=""
               />
-              <div className="position-absolute second_image"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-2.png" alt="" /></div>
-        <div className="position-absolute third_image"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-1.png" alt="" /></div>
+              <div className="position-absolute second_image d-none-mob d-xs-none d-sm-none d-md-none d-lg-block"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-2.png" alt="" /></div>
+        <div className="position-absolute third_image d-none-mob d-xs-none d-sm-none d-md-none d-lg-block"><img src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/h1-slide2-1.png" alt="" /></div>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section className="awe-work">
         <div className="d-flex align-items-center bg-light">
           <div className="flex-shrink-0 position-relative w-50">
             <img
@@ -775,17 +775,19 @@ export default function Home({ }: Props) {
             />
           </div>
           <div className="flex-grow-1 ms-3 bg-light text-center w-50">
-            <h2 className="primary_title border_bottom">Awesome Work</h2>
-            <h3 className="subtitle mb-4">
-              Eleifend option congue nihil imperdiet doming id quod mazim
-              placerat facer possim assum
-            </h3>
-            <button
-              type="button"
-              className="btn btn-danger btn-lg rounded-pill"
-            >
-              Purchase
-            </button>
+            <div className="custom-width">
+              <h2 className="primary_title border_bottom">Awesome Work</h2>
+              <h3 className="subtitle mb-4">
+                Eleifend option congue nihil imperdiet doming id quod mazim
+                placerat facer possim assum
+              </h3>
+              <button
+                type="button"
+                className="btn btn-danger btn-lg rounded-pill"
+              >
+                Purchase
+              </button>
+            </div>
           </div>
         </div>
       </section>

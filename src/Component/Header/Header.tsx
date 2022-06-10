@@ -18,7 +18,7 @@ const Header = () =>{
                 <img className="qodef-normal-logo d-lg-none" src="https://alecta.qodeinteractive.com/wp-content/uploads/2017/06/logo-mobile.png" alt="logo" height="90" />                     
             </a>
         
-        <a href="#" className="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a>
+        <a href="#" className="navbar-brand font-weight-bold d-block d-lg-none d-none">MegaMenu</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
