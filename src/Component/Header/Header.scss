@@ -149,28 +149,25 @@ header .navbar-expand-lg{justify-content: space-between;}
 .imagestar{
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
 .zoom {
-  -webkit-animation: scale 5s linear infinite;
-          animation: scale 5s linear infinite;
+  -webkit-animation: 2s linear 2s infinite reverse slideIn;
+          animation: 2s linear 2s infinite reverse slideIn;
           position: absolute;
-          top:-10px;
+          top:50px;
           left: 50%;
-          opacity: 0.3;
+          opacity: 0.6;
+          transform: scale(5);
+}
+@keyframes slideIn {
+  0% { top: 100px; }
+  25% {left:calc(50% + 100px);}
+  75% { top:0; }
+  100% { left:50% }
 }
 
-@-webkit-keyframes scale {
-  50% {
-    transform: scale(8);
-  }
-}
-
-@keyframes scale {
-  50% {
-    transform: scale(8);
-  }
-}
 .zoom1 {
   -webkit-animation: scale 5s linear infinite;
           animation: scale 5s linear infinite;
@@ -197,7 +194,6 @@ header .navbar-expand-lg{justify-content: space-between;}
 }
 .carousel-item .main_banner_img{
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .carousel-item img.h-100{
@@ -232,9 +228,6 @@ footer img{max-width: 100%;}
     bottom: auto;
   }
   .carousel-caption .container{max-width: 1130px;}
-  .carousel-item .main_banner_img {
-    background-position: -150px 50px;
-  }
 }
 @media only screen and (max-width: 1200px) {
   .carousel-control-next, .carousel-control-prev{display: none;}
@@ -247,7 +240,7 @@ footer img{max-width: 100%;}
   .qodef-normal-logo.d-lg-none{display: block !important;}
   .qodef-normal-logo.d-none.d-lg-block{display: none !important;}
   .carousel-item .main_banner_img {
-    background-position: -250px 50px;
+    background-position: -250px 0;
   }
   .awe-work img{min-height: 500px;}
   .animateSlide{right:20px;top: 420px;}
@@ -262,7 +255,7 @@ footer img{max-width: 100%;}
     bottom: -15px;
   }
   .carousel-item .main_banner_img {
-    background-position: -500px 50px;
+    background-position: -500px 0;
   }
 
 }
@@ -284,7 +277,7 @@ footer img{max-width: 100%;}
   }
   .awe-work img{min-height: auto;}
   .carousel-item .main_banner_img {
-    background-position: -550px 50px;
+    background-position: -550px 0;
   }
   .carousel-item:first-child .main_banner_img {
     background-position: -600px 50px;
