@@ -127,7 +127,7 @@ const H1SlideImg4 = () => {
   const img4: any = useRef(null);
 
   useEffect(() => {
-    gsap.to(img4.current, { duration: 1.5, scale: 1.5 });
+    gsap.to(img4.current, { duration: 1.6, scale: 1.6 });
   });
 
   return (

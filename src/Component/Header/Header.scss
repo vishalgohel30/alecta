@@ -150,21 +150,22 @@ header .navbar-expand-lg{justify-content: space-between;}
   position: absolute;
   left: 0;
   z-index: 1;
+  top:-150px;
 }
 
 .zoom {
-  -webkit-animation: 2s linear 2s infinite reverse slideIn;
-          animation: 2s linear 2s infinite reverse slideIn;
+  -webkit-animation: 3s linear 1s infinite reverse slideIn;
+          animation: 3s linear 1s infinite reverse slideIn;
           position: absolute;
-          top:50px;
+          top:-100px;
           left: 50%;
           opacity: 0.6;
-          transform: scale(5);
+          transform: scale(7);
 }
 @keyframes slideIn {
-  0% { top: 100px; }
+  0% { top: -30px; }
   25% {left:calc(50% + 100px);}
-  75% { top:0; }
+  75% { top:-100px; }
   100% { left:50% }
 }
 
