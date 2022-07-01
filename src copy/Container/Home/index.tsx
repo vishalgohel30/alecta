@@ -227,31 +227,31 @@ export default function Home({ }: Props) {
   }, [state]);
 
   useEffect(()=>{
-    gsap.to(ourAwesomeWorkCardImg1.current,  {duration: 0.5, scale: 1,  scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg1.current,  {duration: 1.1, scale: 1.8,  scrollTrigger:{
       trigger:ourAwesomeWorkCardImg1.current
     }})
-    gsap.to(ourAwesomeWorkCardImg2.current,  {duration: 0.6, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg2.current,  {duration: 1.2, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg2.current
     }})
-    gsap.to(ourAwesomeWorkCardImg2.current,  {duration: 0.7, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg2.current,  {duration: 1.3, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg2.current
     }})
-    gsap.to(ourAwesomeWorkCardImg3.current,  {duration: 0.8, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg3.current,  {duration: 1.4, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg3.current
     }})
-    gsap.to(ourAwesomeWorkCardImg4.current,  {duration: 0.9, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg4.current,  {duration: 1.5, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg4.current
     }})
-    gsap.to(ourAwesomeWorkCardImg5.current,  {duration: 1, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg5.current,  {duration: 1.6, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg5.current
     }})
-    gsap.to(ourAwesomeWorkCardImg6.current,  {duration: 1.1, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg6.current,  {duration: 1.7, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg6.current
     }})
-    gsap.to(ourAwesomeWorkCardImg7.current,  {duration: 1.2, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg7.current,  {duration: 1.8, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg7.current
     }})
-    gsap.to(ourAwesomeWorkCardImg8.current,  {duration: 1.3, scale: 1,    scrollTrigger:{
+    gsap.to(ourAwesomeWorkCardImg8.current,  {duration: 1.2, scale: 1.8,    scrollTrigger:{
       trigger:ourAwesomeWorkCardImg8.current
     }})
 
